@@ -36,7 +36,7 @@ export const siteConfig: Config = {
   description: ui[DEFAULT_LANG]["site.description"].text,
   lang: DEFAULT_LANG,
   profile: {
-    author: "Amy Dang",
+    author: "Blair Vanderlugt",
     description: ui[DEFAULT_LANG]["profile.description"].text
   },
   settings: {
@@ -53,17 +53,17 @@ export const SOCIAL_LINKS: Array<SocialLink> = [
   {
     icon: "mdi:github",
     friendlyName: "Github",
-    link: "https://github.com/kirontoo/astro-theme-cody",
+    link: "https://github.com/bvanderlugt",
   },
   {
     icon: "mdi:linkedin",
     friendlyName: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/blairvanderlugt/",
   },
   {
     icon: "mdi:email",
     friendlyName: "email",
-    link: "mailto:ndangamy@gmail.com",
+    link: "mailto:contact@vandair.net",
   },
   {
     icon: "mdi:rss",
@@ -72,7 +72,11 @@ export const SOCIAL_LINKS: Array<SocialLink> = [
   }
 ];
 
+//// NOTE: match these entries with keys in `src/i18n/nav.ts`
+//export const NAV_LINKS: Array<keyof typeof nav[SupportedLanguage]> = [
+//  "home", "about", "blog", "projects", "archive"
+//];
 // NOTE: match these entries with keys in `src/i18n/nav.ts`
 export const NAV_LINKS: Array<keyof typeof nav[SupportedLanguage]> = [
-  "home", "about", "blog", "projects", "archive"
+  "home", "about", "blog"
 ];

@@ -9,13 +9,13 @@ import type { SupportedLanguage } from "src/utils/i18n";
 export default {
     "en": {
         "site.title": {
-            text: "Astro Theme Cody"
+            text: "Blair's Blog"
         },
         "site.description": {
-            text: "A minimalist blog theme built with Astro. A quick and easy starter build for anyone who wants to start their own blog."
+            text: "A developer blog"
         },
         "profile.description": {
-            text: "your bio description"
+            text: "Learning in public"
         },
         "blog.lastUpdated": {
             text: "Last updated:"
