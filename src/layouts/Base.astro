@@ -1,38 +1,49 @@
 ---
-import BaseHead from "@/components/BaseHead";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { siteConfig } from "../consts.ts";
-import { getLangFromUrl } from "@/utils";
-import ui from "@/i18n/ui";
+import type { SiteMeta } from '@/types';
+
+import ThemeProvider from '@/components/ThemeProvider.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Head from '@/components/layout/Head.astro';
+import Header from '@/components/layout/Header.astro';
+import { siteConfig } from '@/site.config';
 
 interface Props {
-	title?: string;
-	description?: string;
-	image?: string;
+	meta: SiteMeta;
 }
 
-const lang = getLangFromUrl(Astro.url);
-
 const {
-	title = siteConfig.title,
-	description = ui[lang]["site.description"].text,
-	image,
+	meta: { articleDate, description = siteConfig.description, ogImage, title }
 } = Astro.props;
 ---
 
-<!doctype html>
-<html lang={lang || Astro.currentLocale} class="dark">
-	<head>
-		<BaseHead title={title} description={description} image={image} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section class="cody-bg">
-				<slot />
-			</section>
+<html lang={siteConfig.lang} class="h-full scroll-smooth">
+	<Head articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
+
+	<body
+		class="flex h-full justify-center bg-background bg-[url('/blurry-gradient-haikei.svg')] bg-cover bg-fixed dark:bg-[url('/blurry-gradient-haikei-dark.svg')]"
+	>
+		<ThemeProvider />
+		<main
+			class="flex w-screen flex-col items-center px-5 pt-5 font-satoshi leading-relaxed md:px-0 lg:max-w-7xl"
+		>
+			<Header />
+			<slot />
+			<a
+				href="https://3474070726452.gumroad.com/l/astro-resume-01"
+				class="z-100 fixed bottom-10 mt-16 inline-flex flex-row items-center gap-x-3 rounded-3xl border border-input bg-secondary px-10 py-2 text-sm text-primary shadow-sm transition-all hover:shadow-md"
+			>
+				<span class="relative flex items-center justify-center">
+					<span
+						class="border-accent-300 bg-accent-300 absolute inline-flex h-2 w-2 animate-ping rounded-full border opacity-75"
+					></span>
+					<span class="bg-accent-300 relative inline-flex h-2 w-2 rounded-full"></span>
+				</span>
+
+				<p class="text-lg font-bold">Get template 🚀</p>
+			</a>
+			<div class="w-full text-primary-foreground">
+				<Footer />
+			</div>
 		</main>
-		<Footer />
 	</body>
 </html>

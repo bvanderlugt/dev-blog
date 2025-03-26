@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/portrait.png';
+import Card from './Card.astro';
+import IconText from './IconText.astro';
+import IconWrapper from './IconWrapper.astro';
+import data from '../data.yaml';
+---
+
+<aside
+	class="top-5 flex flex-col items-center justify-center pt-16 md:sticky md:col-span-1 md:h-screen md:pl-5"
+>
+	<Image
+		src={portrait}
+		alt="profile photo"
+		class="bg-accent-200 z-10 h-56 w-auto rounded-3xl p-1"
+		loading="lazy"
+	/>
+
+	<Card class="bg-background-tertiary mt-[-6rem] w-full max-w-[400px] p-5">
+		<div class="flex flex-col items-center gap-y-4 pb-10 pt-24">
+			<h1 class="text-3xl font-bold text-secondary-foreground">{data.name}</h1>
+			<h2 class="text-xl text-secondary-foreground">{data.position}</h2>
+
+			<div class="flex flex-row gap-x-4 pb-3 pt-1">
+				<a href={data.github} target="_blank" aria-label="github"><IconWrapper href="https://github.com" icon="github" classIcon="h-5 w-5" class="bg-accent-200" /></a>
+				<a href={data.linkedin} target="_blank" aria-label="linkedin"><IconWrapper href="https://linkedin.com" icon="linkedin" classIcon="h-5 w-5" class="bg-accent-200" /></a>
+				<a href={data.twitter} target="_blank" aria-label="twitter"><IconWrapper href="https://twitter.com" icon="twitter" classIcon="h-5 w-5" class="bg-accent-200" /></a>
+				<a href="/rss.xml" target="_blank" aria-label="rss"><IconWrapper href="/rss.xml" icon="rss" classIcon="h-5 w-5" class="bg-accent-200" /></a>
+			</div>
+			<Card
+				class="bg-background-secondary flex w-full flex-col gap-x-7 gap-y-1 p-5 text-secondary-foreground"
+			>
+				<IconText title="Phone" subTitle={data.phone} icon="phone" />
+				<div class="border-t border-border"></div>
+				<IconText title="Email" subTitle={data.email} icon="mail" />
+				<div class="border-t border-border"></div>
+				<IconText title="Location" subTitle={data.location} icon="location" />
+				<div class="border-t border-border"></div>
+				<IconText title="Birthday" subTitle={data.birthday} icon="cake" />
+			</Card>
+		</div>
+
+		<a
+			href="/cv-download.pdf"
+			target="_blank"
+			class="bg-accent-200 hover:shadow-background-tertiary/40 flex flex-row items-center justify-center gap-x-3 rounded-3xl px-4 py-2 text-sm transition-all hover:shadow-md dark:shadow-black/50 hover:dark:shadow-white/30"
+		>
+			<!-- <span class="relative flex items-center justify-center">
+					<span
+						class="absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75"
+					></span>
+					<span class="relative inline-flex h-2 w-2 rounded-full bg-green-400"></span>
+				</span> -->
+
+			<p class="text-lg font-bold">Download CV</p>
+		</a>
+	</Card>
+</aside>

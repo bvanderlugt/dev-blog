@@ -1,0 +1,130 @@
+---
+
+name: Lorem ipsum dolor
+position: Position
+email: email@mail.com
+phone: +49 12345 12345
+website: google.de
+linkedin: https://linkedin.com/
+github: https://github.com/
+twitter: https://twitter.com/
+location: Berlin, Germany
+birthday: 10th July 1980
+summary: >
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque quia omnis consectetur, voluptas praesentium veniam blanditiis ratione asperiores accusantium laborum odit commodi quis deserunt incidunt et dolor iure ut! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+experience:
+  - title: Lorem Ipsum
+    company: amet consectetur adipisicing
+    location: Berlin, Germany
+    dateRange: June 2021 - Jan 2024
+    description:
+      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+  - title: Lorem Ipsum
+    company: amet consectetur adipisicing
+    location: Berlin, Germany
+    dateRange: June 2021 - Jan 2024
+    description:
+      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+education:
+  - title: Lorem Ipsum
+    company: amet consectetur adipisicing
+    location: Berlin, Germany
+    dateRange: June 2021 - Jan 2024
+    description:
+      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+  - title: Lorem Ipsum
+    company: amet consectetur adipisicing
+    location: Berlin, Germany
+    dateRange: June 2021 - Jan 2024
+    description:
+      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+projects:
+  - title: Lorem Ipsum
+    description: amet consectetur adipisicing
+    href: https://google.de
+    imagePath: /src/assets/coming-soon.png
+  - title: Lorem Ipsum
+    description: amet consectetur adipisicing
+    href: https://google.de
+    imagePath: /src/assets/coming-soon.png
+skills:
+  Infrastructure:
+    - Terraform
+    - Packer
+  Blockchain:
+    - Bitcoin
+    - Ethereum
+  Configuration Management:
+    - Ansible
+    - Chef
+    - Helm
+  Virtualization & Containers:
+    - Docker
+    - Portainer
+    - Kubernetes
+  CI/CD & SCM:
+    - GitHub Actions
+    - Gitlab CI/CD
+    - Jenkins
+    - git
+  Web & App Servers:
+    - Apache
+    - Tomcat
+    - nginx
+  Frameworks:
+    - Express
+    - React
+    - Django
+    - Ionic
+  Database Servers:
+    - PostgreSQL
+    - MongoDB
+    - Oracle
+  ETL & Integration:
+    - SSIS
+    - Informatica
+  Languages:
+    - JavaScript
+    - Python
+    - Ruby
+    - Rust
+  Scripting & Shell:
+    - Bash
+    - Python
+    - PowerShell
+  Cloud Providers:
+    - AWS
+    - Azure
+    - GCP
+  Operating Systems:
+    - Ubuntu
+    - Redhat
+    - Debian
+  Networking:
+    - TCP/IP
+    - DNS
+    - DHCP
+    - VPN
+    - VLAN
+    - BGP
+certifications:
+  - issuer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+    issued: Jun 2023
+    href: https://google.de
+  - issuer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+    issued: Jun 2023
+    href: https://google.de
+  - issuer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+    issued: Jun 2023
+    href: https://google.de
+  - issuer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+    issued: Jun 2023
+    href: https://google.de

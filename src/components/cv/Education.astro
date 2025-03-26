@@ -1,0 +1,27 @@
+---
+import Card from "../Card.astro";
+import Section from "../Section.astro";
+import data from '../../data.yaml';
+import { Content } from "@/types";
+
+---
+<Section id="education" title="Education">
+	{
+		data.education.map((role: Content) => (
+			<>
+				<Card
+					class="flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground"
+					heading={role.company}
+					subheading={role.title}
+					date={role.dateRange}
+				>
+					<ul class="ml-4 list-disc text-muted-foreground">
+						{role.description.map((bullet) => (
+							<li>{bullet}</li>
+						))}
+					</ul>
+				</Card>
+			</>
+		))
+	}
+</Section>
