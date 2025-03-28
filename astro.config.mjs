@@ -7,7 +7,7 @@ import icon from 'astro-icon';
 import { defineConfig } from 'astro/config';
 import { expressiveCodeOptions } from './src/site.config';
 import { remarkReadingTime } from './src/utils/remarkReadingTime.ts';
-import vercel from '@astrojs/vercel/serverless';
+//import vercel from '@astrojs/vercel/serverless';
 import yaml from '@rollup/plugin-yaml';
 
 const options = {
@@ -34,7 +34,7 @@ const options = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-resume-01.vercel.app',
+  site: 'https://vandair.net',
   integrations: [expressiveCode(expressiveCodeOptions), tailwind({
     applyBaseStyles: false
   }), sitemap(), mdx(), icon(), alpinejs()],
@@ -43,10 +43,10 @@ export default defineConfig({
     remarkPlugins: [remarkReadingTime]
   },
   prefetch: true,
-  output: 'server',
-  adapter: vercel({
-    webAnalytics: { enabled: true }
-  }),
+  //output: 'server',
+  //adapter: vercel({
+    //webAnalytics: { enabled: true }
+  //}),
   vite: {
     plugins: [yaml()],
   },
