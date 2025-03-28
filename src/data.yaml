@@ -1,70 +1,87 @@
 ---
 
-name: Lorem ipsum dolor
-position: Position
-email: email@mail.com
-phone: +49 12345 12345
-website: google.de
-linkedin: https://linkedin.com/
-github: https://github.com/
-twitter: https://twitter.com/
-location: Berlin, Germany
-birthday: 10th July 1980
+name: Blair Vanderlugt
+position: Sr. DevOps Engineer
+email: contact@vandair.net
+website: vandair.net
+linkedin: https://linkedin.com/in/blairvanderlugt
+github: https://github.com/bvanderlugt
+twitter: https://twitter.com/blairvee
+location: San Diego, California
 summary: >
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque quia omnis consectetur, voluptas praesentium veniam blanditiis ratione asperiores accusantium laborum odit commodi quis deserunt incidunt et dolor iure ut! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+   I am a Senior DevOps Engineer with a passion for working in small, agile teams. I have experienced in designing, implementing, and maintaining scalable infrastructure, with a focus on automation, reliability. I have been working in web3 for the last 4 years and I have experience across, retail, enterprise and consulting.
+
+   Outside of work you can find cooking up a storm in the kitchen, practicing yoga, and spending time outside with my wife and dog. 
+
+   I am currently looking for new full-time or contract roles and consulting opportunities.
 experience:
-  - title: Lorem Ipsum
-    company: amet consectetur adipisicing
-    location: Berlin, Germany
-    dateRange: June 2021 - Jan 2024
+  - title: Sr. DevOps Engineer
+    company: Stateless Solutions
+    location: Remote, USA
+    dateRange: June 2023 - October 2024
     description:
-      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
-      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
-  - title: Lorem Ipsum
-    company: amet consectetur adipisicing
-    location: Berlin, Germany
-    dateRange: June 2021 - Jan 2024
+    - Architected and orchestrated GCP infrastructure supporting 25M daily requests across two regions, encompassing IAM, service deployments, and organization-wide best practices for a 5-developer team.
+  - title: DevOps Engineer
+    company: Pocket Network
+    location: Remote, USA
+    dateRange: February 2023 - July 2023
     description:
-      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
-      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+      - Implemented the PosgresSQL database migration from AWS RDS to Google Cloud SQL, reducing costs by 10% and improving performance by 15%.
+      - Developed and tested Helm charts for Kubernetes deployments, including testing and documentation. 
+  - title: Solutions Engineer
+    company: Pocket Network
+    location: Remote, USA
+    dateRange: September 2022 - February 2023
+    description:
+      - Engaged users, community members and partners via Discord and Telegram and collaborated with engineers to measure and reduced TTR on critical issues.
+      - Coordinated with 3rd parties to integrate Pocket Network into their applications, including documentation and support.
+  - title: Technical Lead
+    company: Grassroots Economics
+    location: Remote, USA
+    dateRange: October 2020 - April 2022
+    description:
+      - Launched a private custodial blockchain service that ran on USSD compatible devices, enabling 800+ users and 8,000+ transactions for unbankded populations across Kenya.
+      - Built and maintained the Kubernetes clusters with FluxCD for GitOps and the CI/CD pipeline with GitHub Actions.
+      - Coordinated an Agile team of 5 devs across several timezones and developed milestones and roadmaps for our funding partnerships.
+  - title: Software Development Engineer II
+    company: Microsoft
+    location: Redmond, Washington
+    dateRange: October 2018 - April 2020
+    description:
+      - Owned frontend development for the Azure portal, rapidly mastering TypeScript and Knockout.js codebases. Collaborated cross-functionally with Design and Product Management teams to deliver a new UX for public preview release, meeting tight deadlines and enhancing user experience
+      - Developed the Azure Resource Management repository for the Azure Timeseries Insights team. 
 education:
-  - title: Lorem Ipsum
-    company: amet consectetur adipisicing
-    location: Berlin, Germany
-    dateRange: June 2021 - Jan 2024
+  - title: Master of Science in Resource Economics and Policy
+    company: University of Maine
+    location: Orono, Maine
     description:
-      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
-      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
-  - title: Lorem Ipsum
-    company: amet consectetur adipisicing
-    location: Berlin, Germany
-    dateRange: June 2021 - Jan 2024
+      - My Masters thesis examined variance in land use patterns by private landowners across the urban to rural gradient.
+      - Econometrics I, Econometrics II, Advanced Biometry, Advanced Microeconomics, GIS issues in Policy.
+  - title: Bachelor or Arts in Economics
+    company: Boise State University
+    location: Boise, Idaho
     description:
-      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
-      - Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+      - McNair Scholar
 projects:
-  - title: Lorem Ipsum
-    description: amet consectetur adipisicing
-    href: https://google.de
+  - title: rainy spring
+    description: An IoT experiment hosted on Azure
+    href: https://github.com/bvanderlugt/rainyspring
     imagePath: /src/assets/coming-soon.png
-  - title: Lorem Ipsum
-    description: amet consectetur adipisicing
-    href: https://google.de
+  - title: URL shortenify
+    description: A URL shortening service
+    href: https://github.com/bvanderlugt/urlshortenify
     imagePath: /src/assets/coming-soon.png
 skills:
   Infrastructure:
     - Terraform
     - Packer
   Blockchain:
-    - Bitcoin
     - Ethereum
   Configuration Management:
     - Ansible
-    - Chef
     - Helm
   Virtualization & Containers:
     - Docker
-    - Portainer
     - Kubernetes
   CI/CD & SCM:
     - GitHub Actions
@@ -73,29 +90,23 @@ skills:
     - git
   Web & App Servers:
     - Apache
-    - Tomcat
     - nginx
   Frameworks:
     - Express
     - React
-    - Django
-    - Ionic
+    - Flask
   Database Servers:
     - PostgreSQL
     - MongoDB
-    - Oracle
-  ETL & Integration:
-    - SSIS
-    - Informatica
+    - DynamoDB
+    - Redis
   Languages:
     - JavaScript
     - Python
-    - Ruby
-    - Rust
+    - Go
   Scripting & Shell:
     - Bash
     - Python
-    - PowerShell
   Cloud Providers:
     - AWS
     - Azure
@@ -104,6 +115,7 @@ skills:
     - Ubuntu
     - Redhat
     - Debian
+    - Alpine
   Networking:
     - TCP/IP
     - DNS
@@ -112,19 +124,7 @@ skills:
     - VLAN
     - BGP
 certifications:
-  - issuer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.
-    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
-    issued: Jun 2023
-    href: https://google.de
-  - issuer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.
-    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
-    issued: Jun 2023
-    href: https://google.de
-  - issuer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.
-    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
-    issued: Jun 2023
-    href: https://google.de
-  - issuer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.
-    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
-    issued: Jun 2023
-    href: https://google.de
+  - issuer: AWS
+    name: "AWS Certified Solutions Architect - Associate"
+    issued: In progress
+    href: https://aws.amazon.com/
